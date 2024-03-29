@@ -30,13 +30,14 @@
   const getUser=(user:normaluser|adminUser)=>{
     
     if('role' in user){
-        console.log(`i AM TH E ADDMIN ${user.name}`)
+        return  console.log(`i AM TH E ADDMIN ${user.name}`)
     }
     else{
-            console.log(`I am not admin a normal suer ${user.name}`)
+       return     console.log(`I am not admin a normal suer ${user.name}`)
     }
   }
 
   const admin :adminUser= getUser({name:'jahid' , role:'admin'})
   const normal: normaluser= getUser({name:'oli'})
+  console.log(normal);
 }
