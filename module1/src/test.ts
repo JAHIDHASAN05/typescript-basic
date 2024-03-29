@@ -1,0 +1,1 @@
+const jahid:string =" jahid is testing typesript jts config"
